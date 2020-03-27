@@ -29,6 +29,10 @@ app.get('/', (req, res) => res.render('index', { layout: 'landing' }));
 // Gig routes
 app.use('/gigs', require('./routes/gigs'));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
-app.listen(PORT, console.log(`Server started on port ${PORT}`));
+// app.listen(PORT, console.log(`Server started on port ${PORT}`));
+app.listen(PORT, function() {
+  console.log(`server started on port: ${PORT}`);
+  
+})

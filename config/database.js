@@ -1,9 +1,8 @@
 const Sequelize = require('sequelize');
 
-module.exports =  new Sequelize('codegig', 'postgres', '123456', {
+module.exports =  new Sequelize('codegig_db', 'root', 'root', {
   host: 'localhost',
-  dialect: 'postgres',
-  operatorsAliases: false,
+  dialect: 'mysql',
 
   pool: {
     max: 5,
